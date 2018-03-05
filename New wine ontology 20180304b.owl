@@ -184,6 +184,12 @@
         <rdfs:subClassOf rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000065"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000115"/>
+                <owl:someValuesFrom rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000118"/>
                 <owl:allValuesFrom>
                     <owl:Class>
@@ -337,6 +343,7 @@ http://www.mapama.gob.es/es/alimentacion/temas/calidad-agroalimentaria/calidad-d
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000088 -->
 
     <owl:Class rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000088">
+        <rdfs:subClassOf rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000080"/>
@@ -354,8 +361,32 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126 -->
 
     <owl:Class rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000192"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000193"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000194"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000195"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000198"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000200"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000201"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000202"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000203"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000204"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000205"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000206"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000208"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000209"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000210"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000211"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000212"/>
+                    <rdf:Description rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000213"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000142"/>
-        <spanishwine:WINE_0000068 xml:lang="en">The flavours imparted by the wine grape itself (primary characteristics), the winemaking process (e.g., fermentation; secondary characteristics), and ageing (tertiary characteristics).</spanishwine:WINE_0000068>
+        <spanishwine:WINE_0000068 xml:lang="en">The dominant flavour characteristics in the wine produced from specific grapes. Some flavours may be imparted by the wine grape itself (primary characteristics), the winemaking process (e.g., fermentation; secondary characteristics), and ageing (tertiary characteristics), and the climate and soil conditions in the regions from which the wine comes.</spanishwine:WINE_0000068>
         <rdfs:label xml:lang="en">WineFlavour</rdfs:label>
     </owl:Class>
     
@@ -383,7 +414,6 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000142 -->
 
     <owl:Class rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000142">
-        <rdfs:subClassOf rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000065"/>
         <spanishwine:WINE_0000068 xml:lang="en">Characteristics of red wine such as flavour  (aroma, acidity, body), and colour.</spanishwine:WINE_0000068>
         <rdfs:label xml:lang="en">WineDescriptor</rdfs:label>
     </owl:Class>
@@ -606,6 +636,213 @@ Within these broader wine regions there are specific areas that contain the DO, 
         <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000069"/>
         <spanishwine:WINE_0000114 rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000089"/>
         <rdfs:label xml:lang="en">DO_Mondejar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000187 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000187">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000138"/>
+        <rdfs:label xml:lang="en">LightBodied</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000188 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000188">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000138"/>
+        <rdfs:label xml:lang="en">MediumBodied</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000189 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000189">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000138"/>
+        <rdfs:label xml:lang="en">FullBodied</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000190 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000190">
+        <rdf:type rdf:resource="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000186"/>
+        <rdfs:label xml:lang="en">Red</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000191 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000191">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Raspberry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000192 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000192">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Clove</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000193 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000193">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">DriedStrawberry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000194 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000194">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Pomegranate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000195 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000195">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Strawberry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000198 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000198">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Blackberry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000200 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000200">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">BlackPepper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000201">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Cherry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000202 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000202">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">DriedFig</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000203 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000203">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Cedar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000204 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000204">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Tobacco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000205 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000205">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Dill</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000206 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000206">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">GrilledPlum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000208 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000208">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Leather</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000209 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000209">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">BlackLicorice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000210 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000210">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">CrushedGravel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000211 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000211">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Cocoa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000212 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000212">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">SweetTobacco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000213 -->
+
+    <owl:NamedIndividual rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000213">
+        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
+        <rdfs:label xml:lang="en">Jam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1024,7 +1261,6 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000130 -->
 
     <owl:NamedIndividual rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000130">
-        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
         <rdfs:label xml:lang="en">HighAcidty</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1033,7 +1269,6 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000131 -->
 
     <owl:NamedIndividual rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000131">
-        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
         <rdfs:label xml:lang="en">MediumAcidity</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1042,7 +1277,6 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000132 -->
 
     <owl:NamedIndividual rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000132">
-        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
         <rdfs:label xml:lang="en">LowAcidity</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1051,7 +1285,6 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000133 -->
 
     <owl:NamedIndividual rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000133">
-        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
         <rdfs:label xml:lang="en">TartFruit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1060,7 +1293,6 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000134 -->
 
     <owl:NamedIndividual rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000134">
-        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
         <rdfs:label xml:lang="en">RipeFruit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1069,7 +1301,6 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000135 -->
 
     <owl:NamedIndividual rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000135">
-        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
         <rdfs:label xml:lang="en">MineralFlavour</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1078,7 +1309,6 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000136 -->
 
     <owl:NamedIndividual rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000136">
-        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
         <rdfs:label xml:lang="en">SweetFruit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1087,7 +1317,6 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000137 -->
 
     <owl:NamedIndividual rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000137">
-        <rdf:type rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000126"/>
         <rdfs:label xml:lang="en">RusticClayFlavour</rdfs:label>
     </owl:NamedIndividual>
     
