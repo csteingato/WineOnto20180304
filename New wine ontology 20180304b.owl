@@ -47,6 +47,7 @@
     <!-- http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000215 -->
 
     <owl:ObjectProperty rdf:about="http://www.spanishwine.com/Newwineontology20180304.owl/WINE_0000215">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en">isFlavourOf</rdfs:label>
     </owl:ObjectProperty>
     
@@ -419,6 +420,7 @@ Within these broader wine regions there are specific areas that contain the DO, 
     <!-- http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000142 -->
 
     <owl:Class rdf:about="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000142">
+        <rdfs:subClassOf rdf:resource="http://www.spanishwine.com/ontologies/spanishwine.owl/WINE_0000065"/>
         <spanishwine:WINE_0000068 xml:lang="en">Characteristics of red wine such as flavour , colour, and body.</spanishwine:WINE_0000068>
         <rdfs:label xml:lang="en">WineDescriptor</rdfs:label>
     </owl:Class>
