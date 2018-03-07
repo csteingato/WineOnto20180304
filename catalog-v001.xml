@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1520388676333" name="http://www.spanishwine.com/Newwineontology20180304.owl/" uri="New%20wine%20ontology%2020180304b.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1520391937851" name="http://www.spanishwine.com/Newwineontology20180304.owl/" uri="New%20wine%20ontology%2020180304b.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1520391937851" name="http://www.spanishwine.com/Newwineontology20180306FINAL.owl/" uri="SpanishWineOntology20180306%20FINAL.owl"/>
     </group>
 </catalog>
